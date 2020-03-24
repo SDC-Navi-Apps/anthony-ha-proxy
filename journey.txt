@@ -1,0 +1,4 @@
+(3/24/2020)
+-initialized repo with a standard package.json (npm init) then created files for server and client side and added a .gitignore
+-created a basic html page for server to serve
+-created a server that staticly serves the html page
