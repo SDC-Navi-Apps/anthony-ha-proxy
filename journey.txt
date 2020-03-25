@@ -1,5 +1,7 @@
 (3/24/2020)
+
 **make sure to start up each service's server and the proxy server**
+
 -initialized repo with a standard package.json (npm init) then created files for server and client side and added a .gitignore
 
 -created a basic html page for server to serve
@@ -25,3 +27,11 @@
         )
   -because it only grabbed the bundle.js file, it did not come with the CSS stylesheet of my service, so I copied my stylesheet into a stylesheet for my proxy.
   -depending on order of CSS style sheets tags in html file, the last one will override any overlapping code of previous sheets
+
+(3/25/2020)
+
+-render my group's services to proxy server
+  -essentially the same steps for everyone's as I did for my my service.
+  -only thing to keep an eye out for are any overlapping classNames that might impact each other when working with CSS.
+  -also if one component was not able to render, it would stop the rendering of anything after it.
+  -was able to grab the same data based on an input ID for everyone's service.
