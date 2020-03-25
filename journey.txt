@@ -35,3 +35,7 @@
   -only thing to keep an eye out for are any overlapping classNames that might impact each other when working with CSS.
   -also if one component was not able to render, it would stop the rendering of anything after it.
   -was able to grab the same data based on an input ID for everyone's service.
+
+-style the combined version of all of our services to look like the google play store app page
+  -used css grid as I did in my service and it made it simple to be able to style the way I wanted the page to look like
+  -setting the height and width of each cell, auto will make it the size of the contents inside, very helpful for the rows in this project.
