@@ -6,11 +6,65 @@ h1 {
   font-weight: normal;
 }
 
+#combined {
+  display: grid;
+  grid-template:
+  ". . . ." 150px
+  ". appInfo . similar" auto
+  ". carousel . similar" auto
+  ". reviews . ." auto
+  ". . . . " 150px
+  / 250px 720px 30px 400px;
+}
+
+#appInfo {
+  display: grid;
+  grid-area: appInfo;
+  justify-self: start;
+  align-self: start;
+}
+
+#carousel {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+  border-radius: 2px;
+  background-color: white;
+  display: grid;
+  min-width:720px;
+  max-width:720px;
+  display: grid;
+  grid-area: carousel;
+  justify-self: start;
+  align-self: start;
+}
+
+#review {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+  border-radius: 2px;
+  background-color: white;
+  display: grid;
+  min-width:720px;
+  max-width:720px;
+  display: grid;
+  grid-area: reviews;
+  justify-self: start;
+  align-self: start;
+}
+
+#similar1 {
+  display: grid;
+  grid-area: similar;
+  justify-self: end;
+  align-self: start;
+  background-color: #eeeeee;
+}
+
+.col-sm-8 {
+  padding-left: 50px;
+}
+
 .info {
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
   border-radius: 2px;
-  margin-right: 200px;
-  margin-left: 200px;
   background-color: white;
   display: grid;
   min-width:720px;
@@ -183,7 +237,7 @@ h1 {
 } */
 
 .similar-apps {
-  background-color: whitesmoke;
+  background-color: #eeeeee;
   padding-top: 20px;
 }
 
