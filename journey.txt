@@ -39,3 +39,16 @@
 -style the combined version of all of our services to look like the google play store app page
   -used css grid as I did in my service and it made it simple to be able to style the way I wanted the page to look like
   -setting the height and width of each cell, auto will make it the size of the contents inside, very helpful for the rows in this project.
+
+(3/27/2020)
+
+-deploying proxy
+  -create s3 bucket for our proxy server or we can add a file to our existing bucket from our service
+  -create a new ec2 instance for our proxy server and dont forget to add the port 3000 for our proxy
+  -connect to instance through own terminal
+    -go to root directory that holds our .pem file
+    -chmod 600 fileName
+    -ssh -i fileName ec2-user@ip address link
+  -install node
+  -link new s3 bucket to instance
+  -npm install dependencies
