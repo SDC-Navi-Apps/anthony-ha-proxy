@@ -23,20 +23,23 @@
     <script src="http://localhost:3002/bundle.js"></script>
     <script src="http://localhost:3001/dist/bundle.js"></script>
     <script>
+      let url = new URL(window.location);
+      let params = new URLSearchParams(url.search);
+      let id = params.get('id')
       ReactDOM.render(
-        React.createElement(App1, {id: 1}, null),
+        React.createElement(App1, {id}, null),
         document.getElementById('appInfo')
       )
       ReactDOM.render(
-        React.createElement(App0, {id: 1}, null),
+        React.createElement(App0, {id}, null),
         document.getElementById('carousel')
       )
       ReactDOM.render(
-        React.createElement(Review, {id: 1}, null),
+        React.createElement(Review, {id}, null),
         document.getElementById('review')
       )
       ReactDOM.render(
-        React.createElement(App, {id: 1}, null),
+        React.createElement(App, {id}, null),
         document.getElementById('similar1')
       )
     </script>
