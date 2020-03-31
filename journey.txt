@@ -52,3 +52,4 @@
   -install node
   -link new s3 bucket to instance
   -npm install dependencies
+  -change src tags from localhosts to each of our services's IP and port
