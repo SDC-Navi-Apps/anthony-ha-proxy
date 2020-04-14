@@ -18,6 +18,12 @@
   },
   "homepage": "https://github.com/FEC-Group-Link/anthony-ha-proxy#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "artillery": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "newrelic": "^6.5.0"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^1.0.3"
   }
 }
